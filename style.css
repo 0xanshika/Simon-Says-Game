@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle, #222, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.screen {
+  display: none;
+  text-align: center;
+}
+
+.screen.active {
+  display: block;
+}
+
+/* TITLE */
+.title {
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 4px;
+}
+
+.title span {
+  text-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+
+.r { color: #ff4d4d; }
+.b { color: #3498db; }
+.g { color: #2ecc71; }
+.y { color: #f1c40f; }
+.w { color: white; }
+
+/* PLAY BUTTON */
+.play-btn {
+  padding: 16px 50px;
+  border: 3px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.play-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* GAME */
+.score-top {
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+}
+
+.circle {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  margin: auto;
+}
+
+.btn {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.green { background: #2ecc71; }
+.red { background: #e74c3c; }
+.yellow { background: #f1c40f; }
+.blue { background: #3498db; }
+
+.flash {
+  filter: brightness(1.7);
+}
+
+.center {
+  position: absolute;
+  inset: 90px;
+  background: #111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.high-score {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+/* game over */
+.game-over {
+  margin-top: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+.lost-text {
+  color: #ff4d4d;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.hint {
+  font-size: 0.6rem;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+/* rules */
+
+
+.rules {
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+  font-size: 0.7rem; 
+  color: #aaa;      
+}
+
+.rules p {
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.rules:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+

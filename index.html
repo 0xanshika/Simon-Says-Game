@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simon Says</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MENU SCREEN -->
+<section id="menu" class="screen active">
+  <h1 class="title">
+    <span class="r">S</span><span class="b">I</span><span class="g">M</span><span class="y">O</span><span class="w">N</span>
+    <span class="r">S</span><span class="b">A</span><span class="g">Y</span><span class="y">S</span>
+  </h1>
+  <div class="rules">
+    <p>1. WATCH THE FLASHING COLORS</p>
+    <p>2. CLICK THE SAME COLORS IN ORDER</p>
+    <p>3. THE PATTERN GETS LONGER EVERY ROUND</p>
+    <p>4. WRONG MOVE = GAME OVER</p>
+  </div>
+
+  <button id="playBtn" class="play-btn">PLAY</button>
+</section>
+
+<!-- GAME SCREEN -->
+<section id="game" class="screen">
+  <div class="score-top">
+    SCORE:<br>
+    <span id="score">0</span>
+  </div>
+
+  <div class="circle">
+    <div class="btn green" id="green"></div>
+    <div class="btn red" id="red"></div>
+    <div class="btn yellow" id="yellow"></div>
+    <div class="btn blue" id="blue"></div>
+    <div class="center" id="level">0</div>
+  </div>
+
+  <div class="high-score">
+    High Score: <span id="highScore">0</span>
+  </div>
+
+  <div class="game-over hidden" id="gameOver">
+    <p class="lost-text">YOU LOST</p>
+    <button id="restartBtn" class="play-btn">RESTART</button>
+    <p class="hint">Press SPACE to restart</p>
+  </div>
+
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
